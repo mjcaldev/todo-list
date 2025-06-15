@@ -1,49 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Todo-list</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Todo-list</h1>
-    <ul class="todo-list">
-      <li>
-        <input type="checkbox" id="ip1">
-        <label for="ip1">Todo List 1</label>
-        <ul class="sub-item">
-          <li>
-            <a href="https://mjcal.dev" class="sub-item-link" target="_blank">Thing to do</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <input type="checkbox" id="ip2">
-        <label for="ip2">Todo List 2</label>
-        <ul class="sub-item">
-          <li>
-            <a href="https://google.com" class="sub-item-link" target="_blank">Thing to do</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <input type="checkbox" id="ip3">
-        <label for="ip3">Todo List 3</label>
-        <ul class="sub-item">
-          <li>
-            <a href="https://heycartagena.co" class="sub-item-link" target="_blank">Thing to do</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <input type="checkbox" id="ip4">
-        <label for="ip4">Todo List 4</label>
-        <ul class="sub-item">
-          <li>
-            <a href="https://yahoo.com" class="sub-item-link" target="_blank">Thing to do</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo-list</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Todo-list</h1>
+
+  <div class="add-todo">
+    <input type="text" id="newTodo" placeholder="Add a new task..." />
+    <button onclick="addTodo()">Add</button>
+  </div>
+
+  <ul id="todoList" class="todo-list">
+    <!-- Items will go here -->
+  </ul>
+
+  <script src="app.js"></script>
+</body>
 </html>
